@@ -14,7 +14,7 @@
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">Portfolio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="true" aria-label="Toggle navigation">
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
@@ -26,47 +26,20 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Projekter">Projekter</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/OmMig">Om mig</a>
-                        </li>
-
-                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Page2">Page2</a>
+                        </li>
+
+
 
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    
-    <style>
-          aside{
-  width: 15%;
-  height: 100%;
-  padding-right: 15px;
-  margin-right: 15px;
-  padding-bottom: 40%;
-  margin-bottom: 0%;
-  float: left;
-  background-color: red;
-          }    
-    </style>
-
-    <aside>
-        <p class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-        </p>
-
-         <p class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-        </p>
-
-    </aside>
-
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
