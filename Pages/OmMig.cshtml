@@ -5,10 +5,44 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Om Mig</h1>
+    <h1 class="display-4">@ViewData["Title"]</h1>
 
          <p>Siden der fortæller om hvem jeg er.</p>
+         <style>
+.column {
+  float: left;
+  width: 50%;
+}
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  width: 50%;
+}
+         </style>
+
+         <div class="row">
+
+            <div class="column">
+                <p>
+                    Sheeeesh det bussin fr fr
+                </p>
+
+            </div>
+            
+
+            <div class="column">
+                <p>
+                <img src="https://i.imgur.com/GZGhNz9.png" alt="Billede af mig">
+                </p>
+
+            </div>
+</div>
 </div>
 
 

@@ -3,16 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Portfolio_Web_App</title>
+    <title>@ViewData["Title"] - Laurits Støvring</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Portfolio_Web_App.styles.css" asp-append-version="true" />
 </head>
-<body>
+<body class="text-light bg-black">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Portfolio</a>
+                <a class="navbar-brand text-light" asp-area="" asp-page="/Index">Laurits Støvring</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,24 +22,26 @@
                        
                         
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link text-light" asp-area="" asp-page="/Index">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/OmMig">Om Mig</a>
+                            <a class="nav-link text-light" asp-area="" asp-page="/OmMig">Om Mig</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Projekter">Projekter</a>
+                            <a class="nav-link text-light" asp-area="" asp-page="/Projekter">Projekter</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-light" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
 
 
                     </ul>
                 </div>
+
+                </style>
             </div>
         </nav>
     </header>
@@ -51,29 +53,28 @@ aside {
   padding-right: 15px;
   margin-right: 15px;
   padding-bottom: 50%;
-  margin-bottom: 15px;
   float: left;
   
-  background-color: lightblue
+  background-color: DarkSlateBlue;
 }
 </style>
 
 <aside>
         
     <p class="border-bottom mb">
-         <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+         <a class="nav-link text-light" asp-area="" asp-page="/Index">Home</a>
     </p>
     
     <p class="border-bottom mb">
-         <a class="nav-link text-dark" asp-area="" asp-page="/OmMig">Om Mig</a>
+         <a class="nav-link text-light" asp-area="" asp-page="/OmMig">Om Mig</a>
     </p>
     
     <p class="border-bottom mb">
-         <a class="nav-link text-dark" asp-area="" asp-page="/Projekter">Projekter</a>
+         <a class="nav-link text-light" asp-area="" asp-page="/Projekter">Projekter</a>
     </p>
 
     <p class="border-bottom mb">
-         <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+         <a class="nav-link text-light" asp-area="" asp-page="/Privacy">Privacy</a>
     </p>
 
 </aside>
@@ -83,11 +84,19 @@ aside {
             @RenderBody()
         </main>
     </div>
+    
+    <style>
+        footer {
+position: fixed;
+bottom: 0;
+}
+
+    </style>
 
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted" style="background-color:; width:20%">
        
-          <p> &copy; 2022 - Portfolio - <a asp-page="/Privacy">Privacy</a> </p>
+          <p style="text-color: lightgrey"> &copy; 2022 - Portfolio - <a asp-page="/Privacy">Privacy</a> </p>
         
     </footer>
 
