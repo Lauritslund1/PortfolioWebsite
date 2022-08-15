@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
     <title>@ViewData["Title"] - Laurits Støvring</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -12,36 +12,32 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand text-light" asp-area="" asp-page="/Index">Laurits Støvring</a>
+                <a class="navbar-brand text-light" style="margin-right:100px" asp-area="" asp-page="/Index">Laurits Støvring</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav flex-grow-1" >
                        
                         
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-page="/Index">Home</a>
+                        <li class="nav-item" style="margin-right:30px">
+                            <a class="nav-link text-light"  asp-area="" asp-page="/Index">Home</a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item" style="margin-right:30px">
                             <a class="nav-link text-light" asp-area="" asp-page="/OmMig">Om Mig</a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item" style="margin-right:30px">
                             <a class="nav-link text-light" asp-area="" asp-page="/Projekter">Projekter</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
 
 
                     </ul>
                 </div>
 
-                </style>
             </div>
         </nav>
     </header>
@@ -49,7 +45,7 @@
         <style>
 aside {
   width: 20%;
-  height: 100%;
+  height:100%;
   padding-right: 15px;
   margin-right: 15px;
   padding-bottom: 50%;
@@ -73,10 +69,6 @@ aside {
          <a class="nav-link text-light" asp-area="" asp-page="/Projekter">Projekter</a>
     </p>
 
-    <p class="border-bottom mb">
-         <a class="nav-link text-light" asp-area="" asp-page="/Privacy">Privacy</a>
-    </p>
-
 </aside>
 
     <div class="container">
@@ -87,16 +79,16 @@ aside {
     
     <style>
         footer {
-position: fixed;
-bottom: 0;
+        position: fixed;
+        bottom: 0;
 }
 
     </style>
 
 
-    <footer class="border-top footer text-muted" style="background-color:; width:20%">
+    <footer class="border-top footer text-muted" style="width:20%">
        
-          <p style="text-color: lightgrey"> &copy; 2022 - Portfolio - <a asp-page="/Privacy">Privacy</a> </p>
+          <p style="color: lightgray"> &copy; 2022 - Laurits Støvring </p>
         
     </footer>
 
